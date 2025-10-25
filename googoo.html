@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday Aditi 🎂💖</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #ffe6f0, #fce4ec, #e3f2fd);
+  font-family: 'Indie Flower', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.card {
+  position: relative;
+  width: 350px;
+  height: 480px;
+  perspective: 1500px;
+}
+
+.card__inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  padding: 25px;
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: transform 1s ease-in-out;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  box-sizing: border-box;
+  background: #fff;
+  font-weight: normal;
+}
+
+.page.hidden {
+  display: none;
+}
+
+.page img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.page p {
+  margin: auto 0;
+  white-space: pre-line;
+  line-height: 1.4;
+}
+
+.page#page2 p {
+  line-height: 1.2; /* tighter spacing just for 2nd page */
+}
+
+.signature {
+  margin-top: 15px;
+  color: #ec729c;
+  font-weight: normal;
+}
+
+.next-btn {
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  background: #4aa3df;
+  color: #fff;
+  font-family: 'Indie Flower', cursive;
+  font-size: 1em;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s, background 0.3s;
+}
+
+.next-btn:hover {
+  transform: scale(1.1);
+  background: #5bb8f5;
+}
+
+.heart {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: #f8bbd0;
+  transform: rotate(45deg);
+  animation: float 10s infinite ease-in;
+  opacity: 0.8;
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background: #f8bbd0;
+  border-radius: 50%;
+}
+
+.heart::before { top: -9px; left: 0; }
+.heart::after { top: 0; left: 9px; }
+
+@keyframes float {
+  0% { transform: translateY(0) rotate(45deg); opacity: 1; }
+  100% { transform: translateY(-100vh) rotate(45deg); opacity: 0; }
+}
+
+@media (max-width: 500px) { .card { width: 300px; height: 420px; } }
+</style>
+</head>
+<body>
+
+<div class="card">
+  <div class="card__inner" id="cardInner">
+    <!-- Page 1 -->
+    <div class="page" id="page1">
+      <img src="https://www.twigseeds.com.au/cdn/shop/files/K340_1100x.jpg?v=1746413470" alt="Birthday Image">
+      <button class="next-btn">Next 🎉</button>
+    </div>
+
+    <!-- Page 2 -->
+    <div class="page hidden" id="page2">
+      <p>
+        Happy Birthday Aditi 🎂💖
+        I LOVE YOU SO MUCH 💖
+        MANY MANY HAPPY RETURNS OF THE DAY!!
+        HAPPY SWEET 16th 🎉🎂
+      </p>
+      <button class="next-btn">Next 🎉</button>
+    </div>
+
+    <!-- Page 3 -->
+    <div class="page hidden" id="page3">
+      <p>
+        HAPPY SWEET 16 DEVI JI !!! 💖
+        umar mei hi badi hoti rhiyo 4 footiyaa 😂
+        teri height kab badhegi 😆
+
+        thank you so much for everything you have done for me till date.
+        i miss you so much 💕
+        i wish mai udd ke aa skti tujhe iss moment pe milne ✈️
+        aur tujhe bta skti ki tu best hai 💖
+      </p>
+      <button class="next-btn">Next 🎉</button>
+    </div>
+
+    <!-- Page 4 -->
+    <div class="page hidden" id="page4">
+      <p>
+        i wish hum hmesha aise hi rhe.  
+        you are my home, my comfort, my everything.  
+        and honestly the bestest thing that could ever be mine.  
+        you don’t even know much i miss you.  
+        all the fun we had at school, jiski ab bas kuch faded memories bachi hai  
+        but still those were the best moments in my life.
+      </p>
+      <button class="next-btn">Next 🎉</button>
+    </div>
+
+    <!-- Page 5 -->
+    <div class="page hidden" id="page5">
+      <p>
+        11th mei aake naa sab kuch bohot change ho gya hai.  
+        kitni kam baat hoti hai naa apni.  
+        phle toh paaglo ki tarah lge rhte the raat ke 3-4 bje tk calls pe.  
+        but it’s ok. ye phase bhi jaldi khtm ho jaaega.  
+        i want the school to end as soon as possible taaki hum jaldi se mil ske.
+      </p>
+      <button class="next-btn">Next 🎉</button>
+    </div>
+
+    <!-- Page 6 -->
+    <div class="page hidden" id="page6">
+      <p>
+        i pakka promise poora din baithh ke baatein krenge  
+        and we won’t even miss the slightest gossip.  
+        kitni baatein baaki hai. din bhar sabki chugliyaa krenge.  
+        but first mai toh manjulika ki tarah ro pdungi tujhe dekh ke. 😭😂
+      </p>
+      <button class="next-btn">Next 🎉</button>
+    </div>
+
+    <!-- Page 7 -->
+    <div class="page hidden" id="page7">
+      <p>
+        i can’t believe we’ve come so far.  
+        6th mei online classes mei chats se lekr ab yaha 11th tk.  
+        and hume abhi toh saath mei bhi rhna hai naa?  
+        mai plan krungi saara interior 😎  
+        kitne mze aaenge naa.  
+        yarr ab mera rona aa rha hai 😢  
+        tu jaldi nhi aa skti kyaa mujhse milne?  
+        anyways, ab rulaaungi nhi, it’s your day today.  
+        have fun!  
+        Once again — Happppppyyyyyy birthdayyyyyyyyyy 🎂💖🎈
+      </p>
+      <button class="next-btn">Next 🎉</button>
+    </div>
+
+    <!-- Page 8 -->
+    <div class="page hidden" id="page8">
+      <p>
+        Stay awesome and keep shining forever 🌟💖<br>
+        <span class="signature">♥ From Your Appu 💌</span>
+      </p>
+    </div>
+  </div>
+</div>
+
+<script>
+// Floating hearts
+function createHeart() {
+  const heart = document.createElement('div');
+  heart.classList.add('heart');
+  heart.style.left = Math.random() * 100 + 'vw';
+  heart.style.background = ['#f8bbd0','#ffe6e6','#fce4ec','#e1bee7','#f8efd4'][Math.floor(Math.random()*5)];
+  heart.style.animationDuration = (5 + Math.random() * 5) + 's';
+  document.body.appendChild(heart);
+  setTimeout(() => heart.remove(), 10000);
+}
+setInterval(createHeart, 400);
+
+const pages = document.querySelectorAll('.page');
+let currentPage = 0;
+let rotation = 0;
+
+function showPage(index) {
+  pages.forEach((page, i) => {
+    page.classList.toggle('hidden', i !== index);
+  });
+}
+
+document.querySelectorAll('.next-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    if (currentPage < pages.length - 1) {
+      if (currentPage >= 1) {
+        rotation += 360;
+        document.getElementById("cardInner").style.transform = `rotateY(${rotation}deg)`;
+        setTimeout(() => {
+          currentPage++;
+          showPage(currentPage);
+        }, 1000);
+      } else {
+        currentPage++;
+        showPage(currentPage);
+      }
+    }
+  });
+});
+
+showPage(0);
+</script>
+
+</body>
+</html>
